@@ -1,0 +1,17 @@
+day = 86400
+hour = 3600
+minute = 60
+
+seconds = int(input("Enter duration (in seconds): "))
+
+days = seconds // day
+seconds = seconds - (days * day)
+
+hours = seconds // hour
+seconds = seconds - (hours * hour)
+
+minutes = seconds // minute
+seconds = seconds - (minutes * minute)
+
+print("{0:.0f} days, {1:.0f} hours, {2:.0f} minutes, {3:.0f} seconds.".format(
+    days, hours, minutes, seconds))
